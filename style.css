@@ -1,0 +1,281 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: "Moderustic", sans-serif;
+}
+.container{
+    height:auto;
+    width:100%;
+    background-image:url(background.png);
+    background-size:cover;
+    background-position:center;
+}
+.navbar{
+    width:100%;
+    height:10%;
+    padding-block:20px;
+    /* border:1px solid black; */
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.logo{
+    height:100%;
+    width:350px;
+    /* border:1px solid black; */
+    margin-left:30px;
+}
+.logo i{
+    font-size:1.6em;
+}
+.logo a{
+    text-decoration:none;
+    font-size:1em;
+    color:black;
+}
+.navbar ul{
+    height:100%;
+    width:400px;
+    /* border:1px solid black; */
+    display:flex;
+    flex-direction:row;
+    list-style:none;
+    justify-content:space-between;
+}
+.btn{
+    height:100%;
+    width:400px;
+    /* border:1px solid black; */
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.btn button{
+    height:35px;
+    width:150px;
+    border-radius:5px;
+    border:none;
+    background-color:black;
+    color:white;
+    margin-right:30px;
+}
+.btn button em{
+    color:grey;
+    font-style:normal;
+}
+.btn a{
+    text-decoration:none;
+    color:black;
+}
+.hero{
+    width:100%;
+    height:500px;
+    /* border:1px solid black; */
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+.hero2{
+    width:18%;
+    height:60px;
+    /* border:1px solid black; */
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+.hero2 button{
+    height:40px;
+    width:40px;
+    margin-left:50px;
+    border-radius:10px;
+    color:white;
+    background-color:black;
+}
+.hero2 em{
+    font-size:1.7em;
+    font-style:normal;
+    font-weight:500;
+}
+.hero2 p{
+    font-size:0.9em;
+    font-weight:100;
+}
+.hero3{
+    height:140px;
+    width:40%;
+    /* border:1px solid black; */
+}
+.hero3 h1{
+    font-size:7em;
+    margin-left:50px;
+    font-weight:400;
+}
+.hero4{
+    width:70%;
+    height:200px;
+    /* border:1px solid black; */
+    display:flex;
+    flex-direction:row;
+}
+.end1{
+    width:50%;
+    height:100%;
+    /* border:1px solid black; */
+    margin-left:50px;
+}
+.end1 button{
+    height:20px;
+    width:30px;
+    margin-top:10px;
+    border-radius:50px;
+    background-color:black;
+    color:white;
+}
+.end1 p{
+    margin-top:10px;
+}
+.secondlast{
+    width:100%;
+    height:60px;
+    padding:10px;
+    /* border:1px solid black; */
+}
+.secondlast img{
+    width:1100px;
+    margin-left:30px;
+}
+.last{
+    width:100%;
+    height:50px;
+    padding-inline-start:20px;
+    padding-inline-end:20px;
+    margin-top:40px;
+    /* border:1px solid black; */
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    background-color: #7672F5;
+    
+}
+.last h2{
+    font-size:1.1em;
+
+}
+@media(max-width:768px){
+    .container{
+        height:auto;
+        width:100%;
+    }
+    .navbar ul{
+        display:none;
+    }
+    .secondlast img{
+       width:600px;
+    }
+    .hero2{
+        width:30%;
+    }
+    .hero2 button{
+        height:30px;
+        width:30px;
+    }
+    .hero3 h1{
+        font-size:4em;
+    }
+    .end1 h1{
+      font-size:1.5em;
+    }
+    .hero3 p{
+        font-size:0.9em;
+    }
+    .last h2{
+        font-size:0.8em;
+    }
+}
+@media(max-width:480px)
+
+{
+    .container{
+        height:auto;
+    }
+    .logo i{
+       font-size:1em;
+    }
+    .logo a{
+        font-size:0.5em;
+    }
+    .btn button{
+        width:100px;
+        height:32px;
+
+    }
+    .hero2{
+        width:30%;
+        /* border:1px solid black; */
+    }
+    .hero2 button{
+        height:40px;
+        width:30px;
+        margin-left:20px;
+    }
+    .hero2 p{
+        font-size:0.6em;
+    }
+    .hero3 {
+        height:auto;
+        width:100%;
+        /* border:1px solid black;  */
+    }
+    .hero3 h1{
+        font-size:3em;
+        margin-left:20px;
+    }
+    .hero4{
+        width:100%;
+        /* border:1px solid black;  */
+        
+    }
+    .end1{
+        margin-left:20px;
+    }
+    .secondlast img{
+        width:440px;
+        margin-left:10px;
+    }
+    .last{
+        font-size:0.6em;
+    }
+}
+@media(max-width:300px){
+    
+    .navbar a{
+        display:none;
+    }
+    .hero2{
+        width:50%;
+    }
+    .btn button{
+        width:100px;
+        height:30px;
+        margin-left:40px;
+    }
+    .btn button em{
+        display:none;
+    }
+    .secondlast img{
+      display:none;
+    }
+    .last h2{
+        font-size:0.1em;
+    }
+}
+@media(max-width:390px){
+    
+   
+    .secondlast img{
+        width:300px;
+    }
+}
